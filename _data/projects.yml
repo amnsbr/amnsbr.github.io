@@ -3,13 +3,13 @@
   stage: manuscript in preparation
   summary:
   tools: fmriprep, FSL feat, MediationToolbox
-- title: 'Neural correlates of motor learning: an activation likelihood estimation meta-analysis'
-  supervisor: Dr. Ali Khatibi & Dr. Masoud Tahmasian
-  stage: ongoing data extraction
-  summary: 
-  tools: ALE meta-analysis
 - title: 'Structural and functional brain effects of antidepressants in major depressive disorder: an ALE meta-analysis'
   supervisor: Dr. Masoud Tahmasian
+  stage: manuscript in preparation
+  summary: 
+  tools: ALE meta-analysis
+- title: 'Neural correlates of motor learning: an activation likelihood estimation meta-analysis'
+  supervisor: Dr. Ali Khatibi & Dr. Masoud Tahmasian
   stage: ongoing data extraction
   summary: 
   tools: ALE meta-analysis
