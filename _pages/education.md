@@ -13,15 +13,17 @@ order: 2
 	<ol>
 		{% for entry in site.data.formal_education %}
 		<li>		
-			<b>{{entry.title}}</b> (GPA: {{entry.gpa}})<br>
+			<b>{{entry.title}}</b> {%if entry.gpa %}(GPA: {{entry.gpa}})<br>{% endif %}
 			{{entry.location}}<br>
 			{{entry.time}}<br>
+			{% if entry.content %}
 		    <span class="links">
 		      [<a class="featured_content">content</a>]
 		    </span>
 	        <span class="featured_content hidden">
 	    	  <p>{{entry.content}}</p>
 			</span>
+			{% endif %}
 		</li>
 		{% endfor %}
 	</ol>

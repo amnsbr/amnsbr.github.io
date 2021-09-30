@@ -3,7 +3,7 @@ layout: page
 permalink: /skills/
 title: skills
 description:
-nav: true
+nav: false
 order: 3
 
 ---
