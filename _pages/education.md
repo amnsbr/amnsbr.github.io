@@ -13,7 +13,7 @@ order: 2
 	<ol>
 		{% for entry in site.data.formal_education %}
 		<li>		
-			<b>{{entry.title}}</b> {%if entry.gpa %}(GPA: {{entry.gpa}})<br>{% endif %}
+			<b>{{entry.title}}</b> {%if entry.gpa %}(GPA: {{entry.gpa}}){% endif %}<br>
 			{{entry.location}}<br>
 			{{entry.time}}<br>
 			{% if entry.content %}
