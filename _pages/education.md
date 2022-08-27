@@ -5,7 +5,7 @@ title: education and teaching
 description:
 nav: true
 order: 2
-
+additional_education: true
 ---
 ## Academic Qualification
 <div class="row">
@@ -64,19 +64,16 @@ order: 2
   </div>
 </div>
 ---
-
+{% if page.additional_education -%}
 ## Additional Education
-{% for category in site.data.courses %}
-#### {{category.name}}
 <div class="row">
   <div class="education col-sm-12">
 	<ol>
-		{% assign sorted_courses = category.courses | sort: "year" | reverse %}
+		{% assign sorted_courses = site.data.courses | sort: "year" | reverse %}
 		{% for entry in sorted_courses %}
 		<li>		
-			<b>{{entry.title}}</b> ({{entry.duration}})<br> 
-			{{entry.location}}, {{entry.year}}<br>
-		    <span class="links">
+			<b>{{entry.title}}</b> ({{entry.duration}}), <!--{{entry.location}},-->{{entry.year}}
+		    <!-- <span class="links">
 		      {% if entry.content %}
 		      [<a class="featured_content">content</a>]
 		      {% endif %}
@@ -93,10 +90,10 @@ order: 2
 	        <span class="featured_content hidden">
 	    	  <p>{{entry.content}}</p>
 			</span>
-			{% endif %}
+			{% endif %} -->
 		</li>
 		{% endfor %}
 	</ol>
   </div>
 </div>
-{% endfor %}
+{%- endif %}

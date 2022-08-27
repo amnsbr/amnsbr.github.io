@@ -3,7 +3,7 @@ layout: page
 title: bio
 permalink: /bio
 description: 
-nav: true
+nav: false
 order: 1
 ---
 

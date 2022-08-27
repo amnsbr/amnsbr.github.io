@@ -1,7 +1,6 @@
 {% if site.footer_fixed %}
 <footer class="fixed-bottom">
-  <div class="container mt-0">
-    &copy; Copyright {{ site.time | date: '%Y' }} {{ site.title }}.
+  <div class="container mt-0 text-center">
     {{ site.footer_text }}
     {% if site.last_updated %}
     Last updated: {{ "now" | date: '%B %Y' }}.
@@ -10,8 +9,7 @@
 </footer>
 {% else %}
 <footer class="sticky-bottom mt-5">
-  <div class="container">
-    &copy; Copyright {{ site.time | date: '%Y' }} {{ site.title }}.
+  <div class="container text-center">
     {{ site.footer_text }}
     {% if site.last_updated %}
     Last updated: {{ "now" | date: '%B %Y' }}.
