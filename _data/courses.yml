@@ -135,6 +135,10 @@
   certificate: 
   audit: true
 - title: Computational Psychiatry Course
-  location: Online
+  location: University of Zurich (online)
   year: 2022
   duration: 1 week
+- title: The Virtual Brain in Clinical Research
+  location: Charité University Hospital Berlin (online)
+  year: 2022
+  duration: 12 sessions

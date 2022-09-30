@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /education_teaching/
-title: education and teaching
+permalink: /education/
+title: education
 description:
 nav: true
 order: 2
