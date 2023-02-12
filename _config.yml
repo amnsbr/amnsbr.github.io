@@ -149,6 +149,7 @@ enable_mansory:           true
 enable_progressbar:       true
 enable_tooltips:          true
 show_social_icons:        true
+enable_dimensions:        true
 
 # -----------------------------------------------------------------------------
 # Library versions

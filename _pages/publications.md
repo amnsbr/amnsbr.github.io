@@ -10,6 +10,8 @@ order: 4
 <div class="publications-auto" markdown="1">
 
 ### Papers
+[[My Google Scholar profile]](https://scholar.google.com/citations?user=kv7xdfYAAAAJ&hl=en)
+
 {% bibliography -f papers %}
 
 ---

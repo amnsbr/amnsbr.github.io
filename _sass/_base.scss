@@ -368,6 +368,18 @@ footer.sticky-bottom {
       //a.abstract, a.bibtex {
       //  cursor: pointer;
       //}
+      .badges {
+        span {
+            display: inline-block;
+            color: 'black';
+            height: 100%;
+            padding-left: 0.5rem;
+            vertical-align: middle;
+            &:hover {
+            text-decoration: underline;
+            }
+        }
+      }
       .hidden {
         font-size: 0.875rem;
         max-height: 0px;

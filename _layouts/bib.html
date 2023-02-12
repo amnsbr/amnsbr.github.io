@@ -81,6 +81,10 @@
       </span>
     {% endif %}
 
+    {% if site.enable_dimensions %}
+        <span class="__dimensions_badge_embed__" {% if entry.doi %}data-doi="{{ entry.doi }}"{% else if entry.pmid %}data-pmid="{{ entry.pmid }}"{% else %}data-id="{{ entry.dimensions }}"{% endif %} data-hide-zero-citations="true" data-style="small_rectangle" data-legend="never"></span>
+    {% endif %}
+
     <span class="links">
     {% if entry.abstract %}
       [<a class="abstract">abstract</a>]
@@ -123,7 +127,6 @@
       <strong>{{tag}}</strong>
       {% endfor %}
     {% endif %}
-
     </span>
 
     <!-- Hidden abstract block -->
