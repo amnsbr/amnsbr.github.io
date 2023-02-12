@@ -658,3 +658,173 @@ footer.sticky-bottom {
       }
 
 }
+
+// .timeline{
+//     width:800px;
+//     padding:30px 20px;
+//   }
+//   .timeline ul{
+//     list-style-type:none;
+//     border-left:2px solid #000000;
+//     padding:10px 5px;
+//   }
+//   .timeline ul li{
+//     padding:20px 20px;
+//     position:relative;
+//     // cursor:pointer;
+//     transition:.5s;
+//   }
+//   .timeline ul li span{
+//     display:inline-block;
+//     // padding:2px 5px;
+//     font-size:15px;
+//     font-weight: bold;
+//     text-align:center;
+//   }
+//   .timeline ul li .content h3{
+//     color:#000000;
+//     font-size:17px;
+//     padding-top:5px;
+//   }
+//   .timeline ul li .content p{
+//     padding:5px 0px 15px 0px;
+//     font-size:15px;
+//   }
+//   .timeline ul li:before{
+//     position:absolute;
+//     content:'';
+//     width:10px;
+//     height:10px;
+//     // background-color:#000000;
+//     background: #fff;
+//     border: 3px solid #000;    
+//     border-radius:50%;
+//     left:-11px;
+//     top:28px;
+//     transition:.5s;
+//   }
+// //   .timeline ul li:hover{
+// //     background-color:#071f2a;
+// //   }
+// //   .timeline ul li:hover:before{
+// //     background-color:#0F0;
+// //     box-shadow:0px 0px 10px 2px #0F0;
+// //   }
+//   @media (max-width:300px){
+//     .timeline{
+//       width:100%;
+//       padding:30px 5px 30px 10px;
+//     }
+//     .timeline ul li .content h3{
+//       color:#34ace0;
+//       font-size:15px;
+//     }
+  
+//   }
+
+/* Timeline Container */
+.timeline {
+    // background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Card container */
+  .timeline-card {
+    position: relative;
+    // max-width: 800px;
+    padding: 30px 30px 30px 30px;
+  }
+  
+  /* setting padding based on even or odd */
+//   .timeline-card:nth-child(odd) {
+//     padding: 30px 0 30px 30px;
+//   }
+//   .timeline-card:nth-child(even) {
+//     padding: 30px 30px 30px 0;
+//   }
+
+  /* Global ::before */
+  .timeline-card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid rgb(0, 0, 0);
+  }
+  
+  /* Setting the border of top, bottom, left */
+  .timeline-card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  /* Setting the border of top, bottom, right */
+  .timeline-card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 20px 20px 0;
+  }
+  
+  /* Removing the border if it is the first card */
+  .timeline-card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+  }
+  
+  /* Removing the border if it is the last card  and it's odd */
+  .timeline-card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  /* Removing the border if it is the last card  and it's even */
+  .timeline-card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  /* Information about the timeline */
+  .timeline-info {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  /* Title of the card */
+  .timeline-title {
+    color: black;
+    position: relative;
+  }
+  
+  /* Timeline dot  */
+  .timeline-title::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid black;
+  }
+  
+//   /* text right if the card is even  */
+//   .timeline-card:nth-child(even) > .info > .title {
+//     text-align: right;
+//   }
+  
+  /* setting dot to the left if the card is odd */
+  .timeline-card:nth-child(odd) > .timeline-info > .timeline-title::before {
+    left: -52.5px;
+  }
+  
+  /* setting dot to the right if the card is odd */
+  .timeline-card:nth-child(even) > .timeline-info > .timeline-title::before {
+    right: -52.5px;
+  }
