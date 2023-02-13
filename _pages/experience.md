@@ -7,9 +7,6 @@ nav: true
 order: 2
 additional_education: true
 ---
-
-
-
 <div class="timeline">
   <div class="outer">
     {% for entry in site.data.experience %}
@@ -22,6 +19,39 @@ additional_education: true
       </div>
     </div>
     {% endfor %}
+  </div>
+</div>
+
+## Teaching
+<div class="row">
+  <div class="education col-sm-12">
+	<ol>
+		{% assign sorted_teaching = site.data.teaching | sort: "year" | reverse %}
+		{% for entry in sorted_teaching %}
+		<li>		
+			<b>{{entry.title}}</b> ({{entry.duration}})<br>
+			{{entry.location}}, {{entry.year}}<br>
+		    <span class="links">
+		      {% if entry.content %}
+		      [<a class="featured_content">content</a>]
+		      {% endif %}
+		      {% if entry.link %}
+		      [<a href="{{entry.link}}" class="course_link">course page</a>]
+		      {% endif %}
+		      {% if entry.audit %}
+		      [<a class="certificate">audit only</a>]
+  		      {% elsif entry.certificate %}
+		      [<a href="{{ entry.certificate | prepend: '/assets/pdf/' | relative_url }}" target="_blank" class="certificate">certificate</a>]
+		      {% endif %}
+		    </span>
+		    {% if entry.content %}
+	        <span class="featured_content hidden">
+	    	  <p>{{entry.content}}</p>
+			</span>
+			{% endif %}
+		</li>
+		{% endfor %}
+	</ol>
   </div>
 </div>
 
