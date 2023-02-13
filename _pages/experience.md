@@ -30,8 +30,8 @@ additional_education: true
 		{% for entry in sorted_teaching %}
 		<li>		
 			<b>{{entry.title}}</b> ({{entry.duration}})<br>
-			{{entry.location}}, {{entry.year}}<br>
-		    <span class="links">
+			<span style="font-size: small;">{{entry.location}}, {{entry.year}}</span>
+		    <!-- <span class="links">
 		      {% if entry.content %}
 		      [<a class="featured_content">content</a>]
 		      {% endif %}
@@ -48,7 +48,7 @@ additional_education: true
 	        <span class="featured_content hidden">
 	    	  <p>{{entry.content}}</p>
 			</span>
-			{% endif %}
+			{% endif %} -->
 		</li>
 		{% endfor %}
 	</ol>
@@ -63,7 +63,8 @@ additional_education: true
 		{% assign sorted_courses = site.data.courses | sort: "year" | reverse %}
 		{% for entry in sorted_courses %}
 		<li>		
-			<b>{{entry.title}}</b> ({{entry.duration}}), <!--{{entry.location}},-->{{entry.year}}
+			<b>{{entry.title}}</b> ({{entry.duration}})
+            <br><span style="font-size: small;">{{entry.location}}, {{entry.year}}</span>
 		    <!-- <span class="links">
 		      {% if entry.content %}
 		      [<a class="featured_content">content</a>]
