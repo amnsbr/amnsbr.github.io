@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   address:
 
-news: true
-social: false
+news: false
+social: true
 selected_papers: true
 order: 0
 ---
