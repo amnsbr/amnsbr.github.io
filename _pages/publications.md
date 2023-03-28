@@ -16,8 +16,8 @@ order: 4
 
 ---
 
-### Preprints
-{% bibliography -f preprints %}
+### Current preprints
+{% bibliography -f preprints -q @*[published!=true]* %}
 
 ---
 
