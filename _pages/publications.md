@@ -8,16 +8,10 @@ order: 4
 ---
 
 <div class="publications-auto" markdown="1">
-
-### Papers
 [[My Google Scholar profile]](https://scholar.google.com/citations?user=kv7xdfYAAAAJ&hl=en)
 
-{% bibliography -f papers %}
-
----
-
-### Current preprints
-{% bibliography -f preprints -q @*[published!=true]* %}
+### Papers and preprints
+{% bibliography -f preprints -q @*[published!=true]* -f papers %}
 
 ---
 
