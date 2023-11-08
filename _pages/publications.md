@@ -8,7 +8,7 @@ order: 4
 ---
 
 <div class="publications-auto" markdown="1">
-[[My Google Scholar profile]](https://scholar.google.com/citations?user=kv7xdfYAAAAJ&hl=en)
+[[My Google Scholar profile]](https://scholar.google.com/citations?hl=en&user=kv7xdfYAAAAJ&view_op=list_works&sortby=pubdate)
 
 ### Papers and preprints
 {% bibliography -f preprints -q @*[published!=true]* -f papers %}
@@ -19,5 +19,4 @@ order: 4
 {% bibliography -f conference_abstracts %}
 
 \* corresponding author<br>
-<!-- <strong class="sjrq NA_Q">NQ</strong> not in SJR ranking -->
 </div>

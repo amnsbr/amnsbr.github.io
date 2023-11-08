@@ -89,9 +89,9 @@
     {% if entry.abstract %}
       [<a class="abstract">abstract</a>]
     {% endif %}
-    {% if entry.experience %}
+    <!-- {% if entry.experience %}
       [<a class="experience">my experience</a>]
-    {% endif %}
+    {% endif %} -->
     {% if entry.doi %}
       [<a href="{{ entry.doi | prepend: 'https://doi.org/' }}" target="_blank">url</a>]
     {% endif %}
@@ -136,11 +136,11 @@
     </span>
     {% endif %}
 
-    {% if entry.experience %}
+    <!-- {% if entry.experience %}
     <span class="experience hidden">
       <p>{{ entry.experience }}</p>
     </span>
-    {% endif %}
+    {% endif %} -->
 
 
   </div>
