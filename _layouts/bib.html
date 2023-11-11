@@ -106,6 +106,9 @@
     {% if entry.pdf %}
       [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank">pdf</a>]
     {% endif %}
+    {% if entry.pdfurl %}
+      [<a href="{{entry.pdfurl}}" target="_blank">pdf</a>]
+    {% endif %}
     {% if entry.supp %}
       [<a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" target="_blank">Supp</a>]
     {% endif %}
