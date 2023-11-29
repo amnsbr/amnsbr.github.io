@@ -73,7 +73,7 @@
       {% elsif entry.type == "preprint" %}
         <span class="journal-title">{{entry.journal}}</span>
       {% elsif entry.type == "inproceedings" %}
-      <span class="journal-title">{{entry.booktitle}}, {{entry.location}}</span>
+      <span class="journal-title">{{entry.booktitle}} ({{entry.location}})</span>
       {% endif %}
       {% if entry.date %}
       {{entry.date | date: '%Y'}}
