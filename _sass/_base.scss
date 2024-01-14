@@ -917,3 +917,10 @@ footer.sticky-bottom {
     font-size: small;
     transform: rotateY(180deg);
   }
+
+// Repos
+@media (min-width: 768px) {
+    .repo {
+      max-width: 50%;
+    }
+  }
