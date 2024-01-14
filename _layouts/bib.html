@@ -19,6 +19,7 @@
       {{reference}}
     {% else %}
       <span class="title">{{entry.title}}</span>
+      {% if entry.type != "inproceedings" %}
       <span class="author">
         {% for author in entry.author_array %}
           {% if author.last == entry.corresponding %}
@@ -59,7 +60,7 @@
 
         {% endfor %}
       </span>
-
+      {% endif %}
       <span class="periodical">
       {% if entry.type == "article" %}
         <span class="journal-title">{{entry.journal}}</span>
