@@ -64,11 +64,13 @@
       <span class="periodical">
       {% if entry.type == "article" %}
         <span class="journal-title">{{entry.journal}}</span>
-        {% if entry.sjrq %}
-          <strong class="sjrq Q{{entry.sjrq}}">Q{{entry.sjrq|string}}</strong>
-        {% endif %}
-        {% if entry.impactfactor %}
-         <strong class="impact_factor">IF {{entry.impactfactor}}</strong>
+        {% if site.scholar.journal_metrics %}
+            {% if entry.sjrq %}
+            <strong class="sjrq Q{{entry.sjrq}}">Q{{entry.sjrq|string}}</strong>
+            {% endif %}
+            {% if entry.impactfactor %}
+            <strong class="impact_factor">IF {{entry.impactfactor}}</strong>
+            {% endif %}
         {% endif %}
 
       {% elsif entry.type == "preprint" %}
