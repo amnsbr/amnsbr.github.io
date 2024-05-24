@@ -342,6 +342,21 @@ footer.sticky-bottom {
       .journal-title {
         display: inline;
         font-weight: 400;
+        padding: 1px 4px;
+        font-size: 0.9em;
+        background-color: rgb(237, 237, 237);    
+      }
+      .date {
+        padding: 1px 4px;
+        font-size: 0.9em;
+        background-color: white; 
+        color: black;   
+      }
+      .tag {
+        padding: 1px 4px;
+        font-size: 0.9em;
+        background-color: $theme-color;
+        color: white;   
       }
       .author {
         font-size: 0.95em;

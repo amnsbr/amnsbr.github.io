@@ -139,7 +139,7 @@ scholar:
 
   query: "@*"
 
-  journal_metrics: true
+  journal_metrics: false
 
 # -----------------------------------------------------------------------------
 # Optional Features
@@ -151,7 +151,7 @@ enable_mansory:           true
 enable_progressbar:       true
 enable_tooltips:          true
 show_social_icons:        true
-enable_dimensions:        true
+enable_dimensions:        false
 
 # -----------------------------------------------------------------------------
 # Library versions
