@@ -124,7 +124,7 @@ title = {Whole-brain dynamical modeling of the adolescent developing brain.},
 eprint = {},  
 journal = {},   
 date = {2023-07-18},
-booktitle = {32nd Annual Computational Neuroscience Meeting / 28th Annual Meeting of the Organization for Human Brain Mapping},
+booktitle = {32nd Annual Computational Neuroscience Meeting / 29th Annual Meeting of the Organization for Human Brain Mapping},
 location = {Leipzig, Germany / Montreal, Canada},
 abstract = {Introduction. Adolescence is a critical period of development which involves substantial macro- and microscale changes in the brain, including maturation of cortical microcircuits (Sydnor, 2021). Measuring properties of cortical microcircuitry in the developing brain is challenging, and the evidence supporting its maturation is mainly based on animal and post-mortem studies with limited in-vivo human evidence (Ghisleni, 2015; Larsen, 2022; Perica, 2022). Whole-brain dynamical modeling is a promising approach that enables mechanistic inferences about hidden brain features, such as estimated properties of cortical microcircuits (Park, 2021). Here, we used dynamical modeling to study age-related changes of whole-brain model parameters during adolescence. <br>Methods. We studied adolescents from the Philadelphia Neurodevelopmental Cohort (N = 627, 364 females, age: 15.2±2.4 [10-19]). The T1w, rs-fMRI and DWI imaging data were preprocessed using FreeSurfer, fMRIPrep, micapipe and in-house scripts, resulting in the following for each subject: 1) structural connectome as the normalized number of streamlines between pairs of regions, 2) empirical functional connectome (FC) as the correlation of BOLD signals between regions, and 3) empirical functional connectivity dynamics (FCD) matrix, calculated by correlation of FC patterns between the time windows in time-resolved FC, parcellated based on the Schaefer-100 scheme. Next, we used a whole-brain dynamical modeling approach (Wong and Wang, 2006; Deco, 2014) to estimate subject-specific hidden parameters of cortical microcircuits by performing model inversion (Fig. 1). The model consists of ensembles of excitatory and inhibitory neurons in each region, with a set of stochastic differential equations governing their dynamics, and regions connected according to the SC. The model is controlled by free parameters including global coupling (G) as well as local excitatory-to-excitatory (wEE) and inhibitory-to-excitatory (wIE) connection weights. Given a set of parameters, the synaptic activity of neuronal ensembles was simulated for 450 seconds and converted to BOLD signal using the Balloon-Windkessel model. The simulated BOLD was used to calculate simulated FC and FCD, which were used to assess the simulation fit to empirical data. The simulations were performed based on subject-specific as well as group-averaged structural connectomes. Model optimization was performed using grid search and covariance matrix adaptation evolution strategy (Wischnewski, 2022). For each subject, we used simulated excitatory firing rate of the nodes from the optimal simulations as the measure of excitation-inhibition (E-I) ratio. Lastly, we studied age-related variation of regional E-I ratio, as well as their association with regional grey-white matter contrast as a measure of intracortical myelination. <br>Results. The simulations using group-averaged SC led to an optimal fit of 0.21±0.7 across the subjects, which was higher than the optimal goodness of fits when subject-specific SCs were used. The goodness of fit significantly decreased with age (r = -0.15, p < 0.05). We observed a significant increase of optimal G with age (r = 0.10, p<0.05) in the group-SC models but no significant age-related changes of model parameters in the subject-SC models. The regional in silico excitatory firing rates showed region-specific changes with age, with decreased firing rate in parietal and frontal regions and increased firing rate of occipital regions. Grey-white matter contrast was was positively correlated with in silico excitatory firing rates in specific regions. <br>Conclusions. Our whole-brain dynamical modeling approach revealed age-related region-specific changes of E-I ratio and its links to cortical microstructure. We observed decreased E-I ratio in frontal and parietal regions while it increased in occipital regions. This was in line with previous studies indicating decreased E-I ratio predominantly in association regions (Caballero, 2016; Larsen, 2022). We found association of grey-white matter contrast with E-I ratio, overall indicating increased inhibition with higher intracortical myelin, which was in line with findings on interactions of myelination and inhibitory activity and maturation (Stedehouder, 2017). Future work is needed to assess replicability of our findings using longitudinal samples and alternative models.},
 poster = {EIdev_CNS_OHBM.pdf}
@@ -166,4 +166,34 @@ abstract = {
 },
 video = {https://www.youtube.com/watch?v=VVydmLtonLI},
 tags = {Talk}
+}
+
+@inproceedings{eidev_gradients_workshop, 
+title = {Adolescent maturation of cortical excitation-inhibition balance based on individualized and GPU-accelerated biophysical network modeling.}, 
+eprint = {},  
+journal = {},
+date = {2024-06-22},
+booktitle = {Gradients of Brain Organization Workshop},
+location = {Seoul, South Korea},
+tags = {Invited Talk}
+}
+
+@inproceedings{eidev_ohbm2024, 
+title = {Adolescent maturation of cortical excitation-inhibition balance based on individualized biophysical network modeling.}, 
+eprint = {},  
+journal = {},
+date = {2024-06-23},
+booktitle = {30th Annual Meeting of the Organization for Human Brain Mapping},
+location = {Seoul, South Korea},
+poster = {eidev_ohbm2024.pdf},
+}
+
+@inproceedings{cubnm_ohbm2024, 
+title = {cuBNM: GPU-Accelerated Biophysical Network Modeling.}, 
+eprint = {},  
+journal = {},
+date = {2024-06-23},
+booktitle = {30th Annual Meeting of the Organization for Human Brain Mapping},
+location = {Seoul, South Korea},
+poster = {cubnm_ohbm2024.pdf},
 }
