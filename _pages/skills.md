@@ -3,7 +3,7 @@ layout: page
 title: skills
 permalink: /skills/
 description:
-nav: true
+nav: false
 order: 3
 ---
 {% for category in site.data.skills %}
