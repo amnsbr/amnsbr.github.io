@@ -15,7 +15,7 @@ order: 4
 ### Papers and preprints
 {% bibliography -f preprints -q @*[published!=true]* -f papers %}
 
-\* corresponding author<br>
+<sup>*</sup> corresponding author, <sup>†</sup> equal contribution<br>
 
 ---
 
