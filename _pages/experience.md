@@ -5,7 +5,8 @@ title: experience
 description:
 nav: true
 order: 2
-additional_education: true
+teaching: false
+additional_education: false
 ---
 <div class="timeline">
   <div class="outer">
@@ -22,6 +23,7 @@ additional_education: true
   </div>
 </div>
 
+{% if page.teaching -%}
 ## Teaching
 <div class="row">
   <div class="education col-sm-12">
@@ -54,6 +56,7 @@ additional_education: true
 	</ol>
   </div>
 </div>
+{%- endif %}
 
 {% if page.additional_education -%}
 ## Courses and Workshops
