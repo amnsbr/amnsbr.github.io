@@ -12,14 +12,10 @@ order: 4
     <img style="height: 20px; float: right;" src="{{ '/assets/img/scholar_logo_64dp.png' | relative_url }}" alt="Google Scholar">
 </a>
 
-### Papers and preprints
+<br>
 {% bibliography -f preprints -q @*[published!=true]* -f papers %}
 
 <sup>*</sup> corresponding author, <sup>†</sup> equal contribution<br>
 
----
-
-### Conference Presentations
-{% bibliography -f conference_abstracts %}
 
 </div>
