@@ -140,6 +140,8 @@ scholar:
   query: "@*"
 
   journal_metrics: false
+  
+  max_authors: 7  # Maximum number of authors to display (will always include my name and last author)
 
 # -----------------------------------------------------------------------------
 # Optional Features
